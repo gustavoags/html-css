@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: 'Sarala';
+    src: url('fontes/Sarala/Sarala-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor01: #7A38A6;
+    --cor02: #67308C;
+    --cor03: #463973;
+    --cor04: #1F1A40;
+    --cor05: #7A6FBF;
+    --font01: 'Sarala', sans-serif;
+    --font02: 'Righteous', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background-image: linear-gradient(to right, var(--cor04), var(--cor02));
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.img-cabecalho {
+    height: 72px;
+}
+
+.menu { 
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    font-family: var(--font01);
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.2px solid white;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-texto-titulo {
+    font-family:var(--font02);
+    font-weight: 400px;
+    font-size: 64px;
+    color:white;
+}
+
+.conteudo-principal-texto-subtitulo {
+    font-family: var(--font01);
+    font-weight: 400px;
+    font-size: 24px;
+    color: white;
+
+}
+
+.butao {
+    background-color: var(--cor05);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.253);
+    border-radius: 10px;
+    font-family: var(--font01);
+    font-weight: 400px;
+    font-size: 24px;
+    color: var(--cor04);
+}
+
+.butao:hover {
+    background-color: var(--cor01);
+    transition-duration: 0.5s;
+}
+
+.img-conteudo-principal {
+    height: 430px;
+
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.conteudo-secundario-titulo {
+    font-family:var(--font02);
+    font-weight: 400px;
+    font-size: 20px;
+    color:white;
+    border-top: 0.3px solid white;
+    padding-top: 50px ;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: var(--font01);
+    font-weight: 300px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.3px solid white;
+}
+
+.imagem-rodape {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
